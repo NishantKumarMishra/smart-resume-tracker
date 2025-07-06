@@ -73,15 +73,14 @@ This project provides:
 ---
 
 ## 📊 Entity-Relationship Diagram (ERD)
+```text
+User (id, name, email, password, role)
 
+JobApplication (id, user_id, title, company, status, applied_date, interview_date, recruiter_email, notes)
 
-# User (id, name, email, password, role)
+Reminder (id, job_id, type, scheduled_time, is_sent)
 
-# JobApplication (id, user_id, title, company, status, applied_date, interview_date, recruiter_email, notes)
-
-# Reminder (id, job_id, type, scheduled_time, is_sent)
-
-# Document (id, job_id, file_name, path, upload_time)
+Document (id, job_id, file_name, path, upload_time)
 
 🌐 API Specification (Sample)
 
